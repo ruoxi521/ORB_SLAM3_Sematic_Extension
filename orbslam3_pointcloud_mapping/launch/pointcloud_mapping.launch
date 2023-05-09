@@ -1,0 +1,8 @@
+<launch>
+ 
+	<node pkg="orbslam3_pointcloud_mapping" type="orbslam3_pointcloud_mapping" name="orbslam3_pointcloud_mapping" output="screen">
+		<param name="topicRGBDImageAndPose" value="/orbslam3_ros/RGBDImageAndPose"  type="string" />
+		<param name="cameraParamFile"   value="$(find orbslam3_pointcloud_mapping)/config/Astra.yaml"  type="string" /> 
+	</node>
+
+</launch>
