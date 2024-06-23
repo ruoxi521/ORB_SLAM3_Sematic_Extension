@@ -40,5 +40,6 @@ roslaunch orbslam3_pointcloud_mapping tum1.launch
 ```
 
 # Video
+- 【基于ROS的ORB_SLAM3稠密建图与Octomap构建】 https://www.bilibili.com/video/BV14N411i7ZN/?share_source=copy_web&vd_source=48f904feae1533d86f2ff794d5aa2626
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=490233086&bvid=BV14N411i7ZN&cid=1246572349&p=1"&high_quality=1&danmaku=0&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" width="100%" height="600"></iframe>
