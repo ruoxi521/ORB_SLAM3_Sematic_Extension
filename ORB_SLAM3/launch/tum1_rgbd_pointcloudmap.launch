@@ -1,0 +1,12 @@
+<launch>
+    <!-- launch RGBD-Pub Node  -->
+    
+    <param name="use_sim_time" value="true" />
+    <arg name="PATH_TO_VOCABULARY" value="$(find orb_slam3)/../../../Vocabulary/ORBvoc.txt" />
+    <arg name="PATH_TO_SETTINGS_FILE" value="$(find orb_slam3)/TUM1_ROSbag.yaml" />
+
+    <node name="RGBD_Pub" pkg="orb_slam3" type="RGBD_Pub" args="$(arg PATH_TO_VOCABULARY) $(arg PATH_TO_SETTINGS_FILE)" output="screen" >
+    </node>
+
+    <!-- rosplay  -->
+</launch>

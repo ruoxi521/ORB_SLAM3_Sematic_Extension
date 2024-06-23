@@ -1,0 +1,12 @@
+<launch>
+    <!-- launch Stereo-Pub Node  -->
+    
+    <param name="use_sim_time" value="true" />
+    <arg name="PATH_TO_VOCABULARY" value="$(find orb_slam3)/../../../Vocabulary/ORBvoc.txt" />
+    <arg name="PATH_TO_SETTINGS_FILE" value="$(find orb_slam3)/../../Stereo/TUM_512.yaml " />
+
+    <node name="Stereo_Pub" pkg="orb_slam3" type="Stereo_Pub" args="$(arg PATH_TO_VOCABULARY) $(arg PATH_TO_SETTINGS_FILE) ONLINE_RECTIFICATION" output="screen" >
+    </node>
+
+    <!-- rosplay  -->
+</launch>
